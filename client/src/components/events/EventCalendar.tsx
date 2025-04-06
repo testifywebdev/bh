@@ -130,7 +130,7 @@ function EventItem({ event }: EventItemProps) {
               className="px-4 py-2 text-sm font-medium text-white rounded-md transition-colors duration-300 hover:bg-[#800080]"
               style={{ backgroundColor: color }}
             >
-              Register
+              Register Now
             </Button>
           </div>
         </div>
@@ -234,7 +234,7 @@ export default function EventCalendar() {
 
         <div className="text-center mt-10">
           <Button className="inline-block px-6 py-3 bg-[#138808] text-white rounded-md hover:bg-[#800080] transition-colors duration-300 font-medium">
-            Register for All Events <CalendarIcon className="ml-1 inline-block h-4 w-4" />
+            Register Now <CalendarIcon className="ml-1 inline-block h-4 w-4" />
           </Button>
         </div>
       </div>

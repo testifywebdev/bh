@@ -3,17 +3,14 @@ import {
   Facebook, 
   Twitter, 
   Instagram, 
-  Youtube, 
-  MapPin, 
-  Mail, 
-  Phone 
+  Youtube
 } from "lucide-react";
 
 export default function Footer() {
   return (
     <footer className="bg-[#333333] text-white pt-12 pb-6">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
           {/* Logo and Description */}
           <div>
             <div className="flex items-center mb-4">
@@ -69,54 +66,6 @@ export default function Footer() {
                 <Link href="/#heritage">
                   <a className="text-white/80 hover:text-white transition-colors duration-300">Heritage</a>
                 </Link>
-              </li>
-            </ul>
-          </div>
-
-          {/* Contact Us */}
-          <div>
-            <h3 className="font-rajdhani font-bold text-lg mb-4 text-[#FF9933]">Contact Us</h3>
-            <ul className="space-y-3">
-              <li className="flex items-start">
-                <MapPin className="mt-1 mr-3 text-[#FF9933]" size={16} />
-                <span className="text-white/80">
-                  Bharat Mahotsav Cultural Center, Mumbai, Maharashtra, India
-                </span>
-              </li>
-              <li className="flex items-start">
-                <Mail className="mt-1 mr-3 text-[#FF9933]" size={16} />
-                <span className="text-white/80">info@sanskritikbharat.org</span>
-              </li>
-              <li className="flex items-start">
-                <Phone className="mt-1 mr-3 text-[#FF9933]" size={16} />
-                <span className="text-white/80">+91 98765 43210</span>
-              </li>
-            </ul>
-          </div>
-
-          {/* Supported By */}
-          <div>
-            <h3 className="font-rajdhani font-bold text-lg mb-4 text-[#FF9933]">Supported By</h3>
-            <ul className="space-y-2">
-              <li>
-                <a href="#" className="text-white/80 hover:text-white transition-colors duration-300">
-                  Ministry of Culture, India
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-white/80 hover:text-white transition-colors duration-300">
-                  Tourism Department of West India
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-white/80 hover:text-white transition-colors duration-300">
-                  Cultural Heritage Foundation
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-white/80 hover:text-white transition-colors duration-300">
-                  West Indian Arts Council
-                </a>
               </li>
             </ul>
           </div>

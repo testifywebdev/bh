@@ -348,7 +348,7 @@ export class MemStorage implements IStorage {
         month: "April",
         day: 12,
         time: "10:00 AM - 12:00 PM",
-        location: "Main Exhibition Hall, Bharat Mahotsav Venue",
+        location: "NCC Ground, Bharat Mahotsav",
         category: "art",
         imageUrl: "https://images.unsplash.com/photo-1582555172866-f73bb12a2ab3?auto=format&fit=crop&w=800&q=80"
       },
@@ -359,7 +359,7 @@ export class MemStorage implements IStorage {
         month: "April",
         day: 12,
         time: "12:30 PM - 2:30 PM",
-        location: "Central Stage, Bharat Mahotsav Venue",
+        location: "NCC Ground, Bharat Mahotsav",
         category: "dance",
         imageUrl: "https://images.unsplash.com/photo-1583600883972-1976c2f6dca5?auto=format&fit=crop&w=800&q=80"
       },
@@ -370,7 +370,7 @@ export class MemStorage implements IStorage {
         month: "April",
         day: 12,
         time: "3:00 PM - 5:00 PM",
-        location: "Amphitheater, Bharat Mahotsav Venue",
+        location: "NCC Ground, Bharat Mahotsav",
         category: "music",
         imageUrl: "https://images.unsplash.com/photo-1508700929628-666bc8bd84ea?auto=format&fit=crop&w=800&q=80"
       },
@@ -381,7 +381,7 @@ export class MemStorage implements IStorage {
         month: "April",
         day: 12,
         time: "5:00 PM - 6:30 PM",
-        location: "Activity Zone, Bharat Mahotsav Venue",
+        location: "NCC Ground, Bharat Mahotsav",
         category: "games",
         imageUrl: "https://images.unsplash.com/photo-1519748771451-a94c596fad67?auto=format&fit=crop&w=800&q=80"
       },
@@ -392,7 +392,7 @@ export class MemStorage implements IStorage {
         month: "April",
         day: 12,
         time: "10:00 AM - 7:00 PM (All Day)",
-        location: "North Entrance, Bharat Mahotsav Venue",
+        location: "NCC Ground, Bharat Mahotsav",
         category: "photobooth",
         imageUrl: "https://images.unsplash.com/photo-1551854590-dc9c6265b1b1?auto=format&fit=crop&w=800&q=80"
       },
@@ -403,7 +403,7 @@ export class MemStorage implements IStorage {
         month: "April",
         day: 12,
         time: "7:00 PM - 9:00 PM",
-        location: "Main Stage, Bharat Mahotsav Venue",
+        location: "NCC Ground, Bharat Mahotsav",
         category: "guest",
         imageUrl: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=800&q=80"
       }
