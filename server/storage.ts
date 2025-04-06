@@ -342,70 +342,70 @@ export class MemStorage implements IStorage {
     // Events
     const eventsData: InsertEvent[] = [
       {
-        title: "Garba Night Spectacular",
-        description: "Join us for a night of traditional Garba dance, celebrating the spirit of Navratri.",
-        date: new Date("2023-10-15T19:00:00"),
-        month: "October",
-        day: 15,
-        time: "7:00 PM - 11:00 PM",
-        location: "Cultural Center, Mumbai",
-        category: "dance",
-        imageUrl: "https://images.unsplash.com/photo-1600697230088-4992c83b2804?auto=format&fit=crop&w=800&q=80"
-      },
-      {
-        title: "Warli Art Workshop",
-        description: "Learn the ancient art of Warli painting from master artisans of Maharashtra.",
-        date: new Date("2023-10-18T10:00:00"),
-        month: "October",
-        day: 18,
-        time: "10:00 AM - 1:00 PM",
-        location: "Crafts Museum, Ahmedabad",
+        title: "West Indian Art Exhibition",
+        description: "Explore traditional and contemporary art forms from Maharashtra, Gujarat, Rajasthan, Madhya Pradesh, and Uttar Pradesh.",
+        date: new Date("2025-04-12T10:00:00"),
+        month: "April",
+        day: 12,
+        time: "10:00 AM - 12:00 PM",
+        location: "Main Exhibition Hall, Bharat Mahotsav Venue",
         category: "art",
         imageUrl: "https://images.unsplash.com/photo-1582555172866-f73bb12a2ab3?auto=format&fit=crop&w=800&q=80"
       },
       {
-        title: "Classical Music Concert",
-        description: "Experience the enchanting melodies of classical Hindustani music performed by renowned artists.",
-        date: new Date("2023-10-22T18:30:00"),
-        month: "October",
-        day: 22,
-        time: "6:30 PM - 9:30 PM",
-        location: "Diwan-i-Khas, Jaipur",
+        title: "Classical Dance Performances",
+        description: "Witness spectacular performances of Kathak, Lavani, and other classical dance forms from West India.",
+        date: new Date("2025-04-12T12:30:00"),
+        month: "April",
+        day: 12,
+        time: "12:30 PM - 2:30 PM",
+        location: "Central Stage, Bharat Mahotsav Venue",
+        category: "dance",
+        imageUrl: "https://images.unsplash.com/photo-1583600883972-1976c2f6dca5?auto=format&fit=crop&w=800&q=80"
+      },
+      {
+        title: "Folk Music Celebration",
+        description: "Experience the vibrant folk music traditions of West India with renowned performers from five states.",
+        date: new Date("2025-04-12T15:00:00"),
+        month: "April",
+        day: 12,
+        time: "3:00 PM - 5:00 PM",
+        location: "Amphitheater, Bharat Mahotsav Venue",
         category: "music",
         imageUrl: "https://images.unsplash.com/photo-1508700929628-666bc8bd84ea?auto=format&fit=crop&w=800&q=80"
       },
       {
-        title: "Folk Dance Competition",
-        description: "Watch talented performers compete in various folk dance styles of West India.",
-        date: new Date("2023-11-05T16:00:00"),
-        month: "November",
-        day: 5,
-        time: "4:00 PM - 8:00 PM",
-        location: "Town Hall, Pune",
-        category: "dance",
-        imageUrl: "https://images.unsplash.com/photo-1601122997668-56b19c59f185?auto=format&fit=crop&w=800&q=80"
-      },
-      {
-        title: "Heritage Arts Exhibition",
-        description: "An exhibition showcasing the diverse art forms and crafts of West Indian states.",
-        date: new Date("2023-11-12T10:00:00"),
-        month: "November",
+        title: "Traditional Games & Activities",
+        description: "Participate in traditional games and interactive cultural activities from West Indian states.",
+        date: new Date("2025-04-12T17:00:00"),
+        month: "April",
         day: 12,
-        time: "10:00 AM - 6:00 PM",
-        location: "National Gallery, Mumbai",
-        category: "art",
-        imageUrl: "https://images.unsplash.com/photo-1585302769412-95fc2b97b6ea?auto=format&fit=crop&w=800&q=80"
+        time: "5:00 PM - 6:30 PM",
+        location: "Activity Zone, Bharat Mahotsav Venue",
+        category: "games",
+        imageUrl: "https://images.unsplash.com/photo-1519748771451-a94c596fad67?auto=format&fit=crop&w=800&q=80"
       },
       {
-        title: "Diwali Cultural Festival",
-        description: "Celebrate the festival of lights with music, dance, and traditional ceremonies.",
-        date: new Date("2023-11-20T17:00:00"),
-        month: "November",
-        day: 20,
-        time: "5:00 PM - 10:00 PM",
-        location: "Central Park, Ahmedabad",
-        category: "festivals",
-        imageUrl: "https://images.unsplash.com/photo-1564546364925-8bdb53be7be8?auto=format&fit=crop&w=800&q=80"
+        title: "Cultural Photo Booth",
+        description: "Capture memories in traditional West Indian attire at our specially designed cultural photo booth.",
+        date: new Date("2025-04-12T17:00:00"),
+        month: "April",
+        day: 12,
+        time: "10:00 AM - 7:00 PM (All Day)",
+        location: "North Entrance, Bharat Mahotsav Venue",
+        category: "photobooth",
+        imageUrl: "https://images.unsplash.com/photo-1551854590-dc9c6265b1b1?auto=format&fit=crop&w=800&q=80"
+      },
+      {
+        title: "Chief Guest Address & Closing Ceremony",
+        description: "Join us for the special address by our Chief Guest and the grand closing ceremony celebrations.",
+        date: new Date("2025-04-12T19:00:00"),
+        month: "April",
+        day: 12,
+        time: "7:00 PM - 9:00 PM",
+        location: "Main Stage, Bharat Mahotsav Venue",
+        category: "guest",
+        imageUrl: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=800&q=80"
       }
     ];
 
@@ -518,10 +518,16 @@ export class MemStorage implements IStorage {
         imageUrl: "https://images.unsplash.com/photo-1477587458883-47145ed94245?auto=format&fit=crop&w=800&q=80"
       },
       {
-        title: "Goa",
-        description: "Blending Indian and Portuguese influences in cuisine, music, and architecture",
+        title: "Madhya Pradesh",
+        description: "Rich in tribal heritage, classical art forms, and historic temples and monuments",
         category: "states",
-        imageUrl: "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=800&q=80"
+        imageUrl: "https://images.unsplash.com/photo-1627894486637-b2319cd8b923?auto=format&fit=crop&w=800&q=80"
+      },
+      {
+        title: "Uttar Pradesh",
+        description: "Cultural heartland with significant historical sites, classical dance forms, and handicraft traditions",
+        category: "states",
+        imageUrl: "https://images.unsplash.com/photo-1560690825-5f53025c2caf?auto=format&fit=crop&w=800&q=80"
       },
       {
         title: "Culinary Traditions",

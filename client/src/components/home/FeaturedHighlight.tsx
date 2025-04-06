@@ -14,20 +14,20 @@ export default function FeaturedHighlight() {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            <h2 className="font-rajdhani font-bold text-3xl mb-4">Bharat Mahotsav 2023</h2>
+            <h2 className="font-rajdhani font-bold text-3xl mb-4">Bharat Mahotsav 2025</h2>
             <div className="w-20 h-1 bg-[#FF9933] mb-6"></div>
             <p className="text-lg mb-6">
-              Join us for a grand celebration of West Indian culture and heritage during Bharat Mahotsav 2023. 
-              Experience the splendor of traditional performances, art exhibitions, and culinary delights.
+              Join us for a grand celebration of West Indian culture and heritage during Bharat Mahotsav 2025. 
+              Experience the splendor of traditional art exhibitions, dance performances, music, games, and special guest appearances.
             </p>
             <div className="flex flex-wrap gap-4 mb-6">
               <div className="bg-white/10 px-4 py-3 rounded-lg">
                 <Calendar className="mr-2 inline-block text-[#FF9933] h-4 w-4" />
-                <span>October 15-30, 2023</span>
+                <span>April 12th, 2025 - Evening</span>
               </div>
               <div className="bg-white/10 px-4 py-3 rounded-lg">
                 <MapPin className="mr-2 inline-block text-[#FF9933] h-4 w-4" />
-                <span>Multiple venues across West India</span>
+                <span>Cultural Hall, West India</span>
               </div>
             </div>
             <Button className="px-6 py-3 bg-[#FF9933] text-white rounded-md hover:bg-white hover:text-[#FF9933] transition-colors duration-300 font-medium">
@@ -44,8 +44,8 @@ export default function FeaturedHighlight() {
           >
             <div className="relative h-[400px] rounded-lg overflow-hidden ornate-border border-0">
               <img 
-                src="https://images.unsplash.com/photo-1594815980867-7a5453f597fc?auto=format&fit=crop&w=1200&q=80" 
-                alt="Bharat Mahotsav Event" 
+                src="https://images.unsplash.com/photo-1561893836-adae6b766f82?auto=format&fit=crop&w=1200&q=80" 
+                alt="Bharat Mahotsav 2025" 
                 className="w-full h-full object-cover"
               />
             </div>

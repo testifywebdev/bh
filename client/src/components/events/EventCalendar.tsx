@@ -12,30 +12,30 @@ import { Button } from "@/components/ui/button";
 import { SectionHeader } from "@/components/shared/SectionHeader";
 import { Event } from "@/lib/types";
 
-interface MonthButtonProps {
+interface CategoryButtonProps {
   name: string;
-  month: string;
-  currentMonth: string;
+  category: string;
+  currentCategory: string;
   color: string;
   borderColor: string;
   hoverColor: string;
-  onClick: (month: string) => void;
+  onClick: (category: string) => void;
 }
 
-function MonthButton({ 
+function CategoryButton({ 
   name, 
-  month, 
-  currentMonth, 
+  category, 
+  currentCategory, 
   color, 
   borderColor, 
   hoverColor, 
   onClick 
-}: MonthButtonProps) {
-  const isActive = currentMonth === month;
+}: CategoryButtonProps) {
+  const isActive = currentCategory === category;
   
   return (
     <Button
-      onClick={() => onClick(month)}
+      onClick={() => onClick(category)}
       variant="outline"
       className={`
         px-5 py-2 rounded-full transition-colors duration-300 font-medium
@@ -62,13 +62,17 @@ function EventItem({ event }: EventItemProps) {
   const getColorByCategory = () => {
     switch (event.category) {
       case 'art':
+        return '#FF9933';
+      case 'dance':
         return '#138808';
       case 'music':
         return '#800080';
-      case 'dance':
+      case 'games':
         return '#FF9933';
-      case 'festivals':
+      case 'photobooth':
         return '#138808';
+      case 'guest':
+        return '#800080';
       default:
         return '#FF9933';
     }
@@ -123,9 +127,8 @@ function EventItem({ event }: EventItemProps) {
               More details <ArrowRight className="ml-1 inline-block h-4 w-4" />
             </a>
             <Button 
-              className="px-4 py-2 text-sm font-medium text-white rounded-md transition-colors duration-300"
-              style={{ backgroundColor: color, 
-                       ":hover": { backgroundColor: '#800080' } }}
+              className="px-4 py-2 text-sm font-medium text-white rounded-md transition-colors duration-300 hover:bg-[#800080]"
+              style={{ backgroundColor: color }}
             >
               Register
             </Button>
@@ -137,7 +140,7 @@ function EventItem({ event }: EventItemProps) {
 }
 
 export default function EventCalendar() {
-  const [currentMonth, setCurrentMonth] = useState("october");
+  const [currentCategory, setCurrentCategory] = useState("art");
 
   const { 
     data: allEvents, 
@@ -147,16 +150,19 @@ export default function EventCalendar() {
     queryKey: ['/api/events'],
   });
 
-  const months = [
-    { name: "October", month: "october", color: "#FF9933", borderColor: "#FF9933", hoverColor: "#FF9933" },
-    { name: "November", month: "november", color: "#138808", borderColor: "#138808", hoverColor: "#138808" },
-    { name: "December", month: "december", color: "#800080", borderColor: "#800080", hoverColor: "#800080" }
+  const categories = [
+    { name: "Art Exhibition", category: "art", color: "#FF9933", borderColor: "#FF9933", hoverColor: "#FF9933" },
+    { name: "Dance Performance", category: "dance", color: "#138808", borderColor: "#138808", hoverColor: "#138808" },
+    { name: "Music Concert", category: "music", color: "#800080", borderColor: "#800080", hoverColor: "#800080" },
+    { name: "Games & Activities", category: "games", color: "#FF9933", borderColor: "#FF9933", hoverColor: "#FF9933" },
+    { name: "Photo Booth", category: "photobooth", color: "#138808", borderColor: "#138808", hoverColor: "#138808" },
+    { name: "Chief Guest", category: "guest", color: "#800080", borderColor: "#800080", hoverColor: "#800080" }
   ];
 
-  // Filter events by current month
-  const filteredEvents = allEvents?.filter(
-    (event: Event) => event.month.toLowerCase() === currentMonth.toLowerCase()
-  ) || [];
+  // Filter events by current category
+  const filteredEvents = Array.isArray(allEvents) 
+    ? allEvents.filter((event: Event) => event.category.toLowerCase() === currentCategory.toLowerCase()) 
+    : [];
 
   if (isLoading) {
     return (
@@ -185,31 +191,31 @@ export default function EventCalendar() {
     <section id="events" className="py-12 bg-[#FFF5E6]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeader
-          title="Cultural Event Calendar"
-          description="Stay updated with upcoming cultural events and performances during Bharat Mahotsav."
+          title="Bharat Mahotsav Event Sequence"
+          description="Experience a sequence of cultural events on April 12th, 2025 - showcasing the richness of West Indian heritage."
           titleColor="text-[#138808]"
           accentColor="bg-[#FF9933]"
         />
 
-        {/* Month Navigation */}
+        {/* Event Category Navigation */}
         <div className="flex flex-wrap justify-center gap-4 mb-10">
-          {months.map((monthItem) => (
-            <MonthButton
-              key={monthItem.month}
-              name={monthItem.name}
-              month={monthItem.month}
-              currentMonth={currentMonth}
-              color={monthItem.color}
-              borderColor={monthItem.borderColor}
-              hoverColor={monthItem.hoverColor}
-              onClick={setCurrentMonth}
+          {categories.map((categoryItem) => (
+            <CategoryButton
+              key={categoryItem.category}
+              name={categoryItem.name}
+              category={categoryItem.category}
+              currentCategory={currentCategory}
+              color={categoryItem.color}
+              borderColor={categoryItem.borderColor}
+              hoverColor={categoryItem.hoverColor}
+              onClick={setCurrentCategory}
             />
           ))}
         </div>
 
         {/* Event Listings */}
         <div className="space-y-6">
-          <AnimatePresence mode="popLayout">
+          <AnimatePresence mode="sync">
             {filteredEvents.length > 0 ? (
               filteredEvents.map((event: Event) => (
                 <EventItem key={event.id} event={event} />
@@ -220,7 +226,7 @@ export default function EventCalendar() {
                 animate={{ opacity: 1 }}
                 className="text-center py-10"
               >
-                <p className="text-lg text-gray-600">No events scheduled for this month.</p>
+                <p className="text-lg text-gray-600">No events available for this category. Check back later!</p>
               </motion.div>
             )}
           </AnimatePresence>
@@ -228,7 +234,7 @@ export default function EventCalendar() {
 
         <div className="text-center mt-10">
           <Button className="inline-block px-6 py-3 bg-[#138808] text-white rounded-md hover:bg-[#800080] transition-colors duration-300 font-medium">
-            View All Events <CalendarIcon className="ml-1 inline-block h-4 w-4" />
+            Register for All Events <CalendarIcon className="ml-1 inline-block h-4 w-4" />
           </Button>
         </div>
       </div>
