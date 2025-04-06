@@ -234,19 +234,19 @@ export class MemStorage implements IStorage {
       {
         title: "Celebrating West India's Cultural Heritage",
         description: "Experience the vibrant traditions, art, and heritage of West India at Bharat Mahotsav",
-        imageUrl: "https://images.unsplash.com/photo-1625892863038-a478aa174c3c?auto=format&fit=crop&w=1600&q=80",
+        imageUrl: "https://images.unsplash.com/photo-1477587458883-47145ed94245?auto=format&fit=crop&w=1600&q=80",
         order: 1
       },
       {
         title: "Vivid Colors of Rajasthan",
         description: "Explore the royal heritage and colorful traditions of Rajasthan",
-        imageUrl: "https://images.unsplash.com/photo-1599991271419-efa70c1a98f8?auto=format&fit=crop&w=1600&q=80",
+        imageUrl: "https://images.unsplash.com/photo-1608021880929-848249540eaf?auto=format&fit=crop&w=1600&q=80",
         order: 2
       },
       {
         title: "Vibrant Gujarat",
         description: "Discover the rich cultural tapestry and artistic traditions of Gujarat",
-        imageUrl: "https://images.unsplash.com/photo-1601122997668-56b19c59f185?auto=format&fit=crop&w=1600&q=80",
+        imageUrl: "https://images.unsplash.com/photo-1585074395785-40818899d711?auto=format&fit=crop&w=1600&q=80",
         order: 3
       }
     ];
@@ -350,7 +350,7 @@ export class MemStorage implements IStorage {
         time: "10:00 AM - 12:00 PM",
         location: "NCC Ground, Bharat Mahotsav",
         category: "art",
-        imageUrl: "https://images.unsplash.com/photo-1582555172866-f73bb12a2ab3?auto=format&fit=crop&w=800&q=80"
+        imageUrl: "https://images.unsplash.com/photo-1589181990928-c41e05e94e3d?auto=format&fit=crop&w=800&q=80"
       },
       {
         title: "Classical Dance Performances",
@@ -361,7 +361,7 @@ export class MemStorage implements IStorage {
         time: "12:30 PM - 2:30 PM",
         location: "NCC Ground, Bharat Mahotsav",
         category: "dance",
-        imageUrl: "https://images.unsplash.com/photo-1583600883972-1976c2f6dca5?auto=format&fit=crop&w=800&q=80"
+        imageUrl: "https://images.unsplash.com/photo-1601122555063-8bacb7d7fe62?auto=format&fit=crop&w=800&q=80"
       },
       {
         title: "Folk Music Celebration",
@@ -372,7 +372,7 @@ export class MemStorage implements IStorage {
         time: "3:00 PM - 5:00 PM",
         location: "NCC Ground, Bharat Mahotsav",
         category: "music",
-        imageUrl: "https://images.unsplash.com/photo-1508700929628-666bc8bd84ea?auto=format&fit=crop&w=800&q=80"
+        imageUrl: "https://images.unsplash.com/photo-1623467190349-42a72bf9be78?auto=format&fit=crop&w=800&q=80"
       },
       {
         title: "Traditional Games & Activities",
@@ -383,7 +383,7 @@ export class MemStorage implements IStorage {
         time: "5:00 PM - 6:30 PM",
         location: "NCC Ground, Bharat Mahotsav",
         category: "games",
-        imageUrl: "https://images.unsplash.com/photo-1519748771451-a94c596fad67?auto=format&fit=crop&w=800&q=80"
+        imageUrl: "https://images.unsplash.com/photo-1511017049469-e4c95cb14391?auto=format&fit=crop&w=800&q=80"
       },
       {
         title: "Cultural Photo Booth",
@@ -394,7 +394,7 @@ export class MemStorage implements IStorage {
         time: "10:00 AM - 7:00 PM (All Day)",
         location: "NCC Ground, Bharat Mahotsav",
         category: "photobooth",
-        imageUrl: "https://images.unsplash.com/photo-1551854590-dc9c6265b1b1?auto=format&fit=crop&w=800&q=80"
+        imageUrl: "https://images.unsplash.com/photo-1600697228786-f6bcdaba3887?auto=format&fit=crop&w=800&q=80"
       },
       {
         title: "Chief Guest Address & Closing Ceremony",
@@ -405,7 +405,7 @@ export class MemStorage implements IStorage {
         time: "7:00 PM - 9:00 PM",
         location: "NCC Ground, Bharat Mahotsav",
         category: "guest",
-        imageUrl: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=800&q=80"
+        imageUrl: "https://images.unsplash.com/photo-1608021880929-848249540eaf?auto=format&fit=crop&w=800&q=80"
       }
     ];
 
