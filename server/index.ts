@@ -64,3 +64,4 @@ app.listen(process.env.PORT || 5000, "0.0.0.0", () => {
     `Server is running on http://localhost:${process.env.PORT || 3000}`
   );
 });
+})();
