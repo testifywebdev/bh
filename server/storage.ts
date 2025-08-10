@@ -240,13 +240,13 @@ export class MemStorage implements IStorage {
       {
         title: "Vivid Colors of Rajasthan",
         description: "Explore the royal heritage and colorful traditions of Rajasthan",
-        imageUrl: "https://images.unsplash.com/photo-1608021880929-848249540eaf?auto=format&fit=crop&w=1600&q=80",
+        imageUrl: "https://plus.unsplash.com/premium_photo-1661962428918-6a57ab674e23?q=80&w=1600&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         order: 2
       },
       {
         title: "Vibrant Gujarat",
         description: "Discover the rich cultural tapestry and artistic traditions of Gujarat",
-        imageUrl: "https://images.unsplash.com/photo-1585074395785-40818899d711?auto=format&fit=crop&w=1600&q=80",
+        imageUrl: "https://images.unsplash.com/photo-1620103143245-9efb3e4a7553?q=80&w=1600&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         order: 3
       }
     ];
@@ -270,7 +270,7 @@ export class MemStorage implements IStorage {
       {
         title: "Gujarati Folk Music",
         description: "Traditional musical expressions of Gujarat, including Garba and Dandiya Raas, with distinctive instruments and rhythms.",
-        imageUrl: "https://images.unsplash.com/photo-1599991271419-efa70c1a98f8?auto=format&fit=crop&w=800&q=80",
+        imageUrl: "https://plus.unsplash.com/premium_photo-1718570262641-54c3ea3142e9?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         category: "music",
         state: "Gujarat",
         featured: true
